@@ -1,0 +1,8 @@
+CRITICAL - 2022-07-31 12:40:18 --> Array to string conversion
+#0 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\app\Controllers\Cadastro.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\Users\\vinic\\...', 17, Array)
+#1 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(832): App\Controllers\Cadastro->cadastro()
+#2 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cadastro))
+#3 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\vinic\\...')
+#6 {main}
