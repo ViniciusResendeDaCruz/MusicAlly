@@ -117,3 +117,68 @@ CRITICAL - 2022-08-01 09:13:47 --> Trying to access array offset on value of typ
 #4 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #5 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\vinic\\...')
 #6 {main}
+CRITICAL - 2022-08-01 13:43:56 --> syntax error, unexpected '}', expecting ';'
+#0 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('perfil')
+#1 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('perfil')
+#2 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\vinic\\...')
+#6 {main}
+CRITICAL - 2022-08-01 13:44:05 --> Invalid file: _common_layout.php
+#0 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('_common_layout....')
+#1 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\View\View.php(226): CodeIgniter\View\View->render('_common_layout', Array, true)
+#2 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\Common.php(1089): CodeIgniter\View\View->render('perfil/perfil', Array, true)
+#3 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\app\Controllers\Perfil.php(11): view('perfil/perfil')
+#4 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(832): App\Controllers\Perfil->index()
+#5 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Perfil))
+#6 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\vinic\\...')
+#9 {main}
+CRITICAL - 2022-08-01 13:44:15 --> Undefined variable: nome
+#0 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\app\Views\_common\layout.php(53): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\Users\\vinic\\...', 53, Array)
+#1 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\View\View.php(210): include('C:\\Users\\vinic\\...')
+#2 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\View\View.php(226): CodeIgniter\View\View->render('_common/layout', Array, true)
+#4 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\Common.php(1089): CodeIgniter\View\View->render('perfil/perfil', Array, true)
+#5 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\app\Controllers\Perfil.php(11): view('perfil/perfil')
+#6 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(832): App\Controllers\Perfil->index()
+#7 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Perfil))
+#8 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\vinic\\...')
+#11 {main}
+CRITICAL - 2022-08-01 13:45:02 --> Undefined variable: tipo
+#0 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\app\Views\_common\layout.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\Users\\vinic\\...', 55, Array)
+#1 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\View\View.php(210): include('C:\\Users\\vinic\\...')
+#2 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\View\View.php(226): CodeIgniter\View\View->render('_common/layout', Array, true)
+#4 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\Common.php(1089): CodeIgniter\View\View->render('perfil/perfil', Array, true)
+#5 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\app\Controllers\Perfil.php(11): view('perfil/perfil', Array)
+#6 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(832): App\Controllers\Perfil->index()
+#7 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Perfil))
+#8 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\vinic\\...')
+#11 {main}
+CRITICAL - 2022-08-01 16:21:18 --> Trying to access array offset on value of type null
+#0 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\app\Views\_common\layout.php(53): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\Users\\vinic\\...', 53, Array)
+#1 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\View\View.php(210): include('C:\\Users\\vinic\\...')
+#2 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\Common.php(1089): CodeIgniter\View\View->render('_common/layout', Array, true)
+#4 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\app\Controllers\Home.php(9): view('_common/layout', Array)
+#5 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#6 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\vinic\\...')
+#10 {main}
+CRITICAL - 2022-08-01 18:30:26 --> syntax error, unexpected '}', expecting ';'
+#0 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('playlist')
+#1 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('playlist')
+#2 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\vinic\\...')
+#6 {main}

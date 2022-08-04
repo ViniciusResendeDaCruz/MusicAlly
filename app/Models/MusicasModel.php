@@ -40,14 +40,19 @@ class MusicasModel extends Model
     protected $beforeDelete   = [];
     protected $afterDelete    = [];
 
-    public function cadastrarMusica($registro,$nome,$duracao,$arquivo,$musico_id)
+    public function cadastrarMusica($nome,$duracao,$arquivo,$musico_id)
     {
-        return $this->insert(['registro'=>$registro,'nome'=>$nome,'duracao'=>$duracao,'arquivo'=>$arquivo,'musico_id'=>$musico_id]);
+        return $this->insert(['nome'=>$nome,'duracao'=>$duracao,'arquivo'=>$arquivo,'musico_id'=>$musico_id]);
+    }
+
+    public function getAllMusicas()
+    {
+        return $this->select()->get()->getResultArray();
     }
 
     public function getMusicaByRegistro($registro)
     {
-        return $this->where('registro',$registro)->get()->first();
+        return $this->where('registro',$registro)->first();
     }
 
     public function getMusicasByMusicoId($musico_id)
@@ -63,6 +68,21 @@ class MusicasModel extends Model
     public function removeMusica($registro)
     {
         return $this->where('registro',$registro)->delete();
+    }
+
+//  select musicas.*, usuarios.nome as artistaNome from musicas
+//  left join usuarios on usuarios.id = musicas.musico_id
+//  where musicas.registro not IN 
+//  (
+//  select musicas.registro from playlists_musicas
+// 	join musicas on musicas.registro = musica_id
+// 	where playlist_id = '66')
+
+
+    public function getMusicasNotInPlaylists($playlist_id){
+        $subquery = $this->db->table('playlists_musicas')->select('musicas.registro')->join('musicas','musicas.registro = musica_id')->where('playlist_id',$playlist_id);
+        // dd($subquery);
+        return $this->select('musicas.*,usuarios.nome as artistaNome')->join('usuarios','usuarios.id = musicas.musico_id','left')->whereNotIn('musicas.registro',$subquery)->get()->getResultArray();
     }
 
 }

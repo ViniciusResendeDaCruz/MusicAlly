@@ -6,7 +6,7 @@ class Home extends BaseController
 {
     public function index()
     {
-        return view('_common/layout',['nome'=>$this->session->user['nome']]);
+        return view('_common/layout',['user'=>$this->session->user]);
     }
 
     public function deslog()

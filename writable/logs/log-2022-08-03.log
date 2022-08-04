@@ -1,0 +1,8 @@
+CRITICAL - 2022-08-03 07:36:58 --> Trying to access array offset on value of type null
+#0 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\app\Controllers\Playlist.php(23): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\Users\\vinic\\...', 23, Array)
+#1 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(832): App\Controllers\Playlist->playlist('66')
+#2 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Playlist))
+#3 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\vinic\\...')
+#6 {main}

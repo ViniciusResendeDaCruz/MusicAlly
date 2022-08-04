@@ -14,7 +14,7 @@ class PlaylistsModel extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['id','nome','publica','usuario_id'];
+    protected $allowedFields    = ['id','nome','descricao','publica','usuario_id'];
 
     // Dates
     protected $useTimestamps = false;
@@ -40,18 +40,36 @@ class PlaylistsModel extends Model
     protected $beforeDelete   = [];
     protected $afterDelete    = [];
 
-    public function cadastrarPlaylist($nome,$usuario_id,$publica=false)
+    public function cadastrarPlaylist($nome,$descricao,$usuario_id,$publica=false)
     {
-        return $this->insert(['nome'=>$nome,'publica'=>$publica,'usuario_id'=>$usuario_id]);
+        return $this->insert(['nome'=>$nome,'descricao'=>$descricao,'publica'=>$publica,'usuario_id'=>$usuario_id]);
     }
 
-    public function alterarPlaylist($id,$nome,$usuario_id,$publica)
+    public function alterarPlaylist($id,$nome,$descricao,$publica)
     {
-        return $this->update($id,['nome'=>$nome,'publica'=>$publica,'usuario_id'=>$usuario_id]);
+        return $this->update($id,['nome'=>$nome,'publica'=>$publica,'descricao'=>$descricao]);
     }
 
     public function removerPlaylist($id)
     {
         return $this->where('id',$id)->delete();
+    }
+
+    public function getUserPlaylists($id)
+    {
+        return $this->where('usuario_id',$id)->get()->getResultArray();
+    }
+
+    public function verificaDono($usuario_id, $playlist_id)
+    {
+        $dono_id = $this->select('usuario_id')->where('id',$playlist_id)->first()['usuario_id'];
+        // dd($dono_id);
+
+        return $usuario_id == $dono_id ? true : false;
+    }
+
+    public function getPlaylistById($id)
+    {
+        return $this->where('id',$id)->first();
     }
 }

@@ -1,0 +1,420 @@
+CRITICAL - 2022-08-02 06:50:14 --> Trying to access array offset on value of type null
+#0 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\app\Views\_common\layout.php(59): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\Users\\vinic\\...', 59, Array)
+#1 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\View\View.php(210): include('C:\\Users\\vinic\\...')
+#2 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\View\View.php(226): CodeIgniter\View\View->render('_common/layout', Array, true)
+#4 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\Common.php(1089): CodeIgniter\View\View->render('playlist/playli...', Array, true)
+#5 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\app\Controllers\Playlist.php(11): view('playlist/playli...', Array)
+#6 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(832): App\Controllers\Playlist->index()
+#7 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Playlist))
+#8 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\vinic\\...')
+#11 {main}
+CRITICAL - 2022-08-02 06:51:32 --> Invalid file: playlist/musicas.php
+#0 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('playlist/musica...')
+#1 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\Common.php(1089): CodeIgniter\View\View->render('playlist/musica...', Array, true)
+#2 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\app\Controllers\Playlist.php(15): view('playlist/musica...')
+#3 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(832): App\Controllers\Playlist->playlist('2')
+#4 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Playlist))
+#5 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\vinic\\...')
+#8 {main}
+CRITICAL - 2022-08-02 08:19:27 --> Too few arguments to function App\Controllers\Ajax\Playlist::novaPlaylist(), 1 passed in C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php on line 832 and exactly 3 expected
+#0 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(832): App\Controllers\Ajax\Playlist->novaPlaylist('true')
+#1 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajax\Playlist))
+#2 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\vinic\\...')
+#5 {main}
+CRITICAL - 2022-08-02 08:30:10 --> Too few arguments to function App\Controllers\Ajax\Playlist::novaPlaylist(), 1 passed in C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php on line 832 and exactly 3 expected
+#0 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(832): App\Controllers\Ajax\Playlist->novaPlaylist('false')
+#1 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajax\Playlist))
+#2 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\vinic\\...')
+#5 {main}
+CRITICAL - 2022-08-02 08:35:24 --> Too few arguments to function App\Controllers\Playlist::playlist(), 0 passed in C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(832): App\Controllers\Playlist->playlist()
+#1 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Playlist))
+#2 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\vinic\\...')
+#5 {main}
+CRITICAL - 2022-08-02 09:33:46 --> Invalid file: playlist/musicas.php
+#0 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('playlist/musica...')
+#1 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\Common.php(1089): CodeIgniter\View\View->render('playlist/musica...', Array, true)
+#2 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\app\Controllers\Playlist.php(14): view('playlist/musica...')
+#3 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(832): App\Controllers\Playlist->playlist('58')
+#4 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Playlist))
+#5 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\vinic\\...')
+#8 {main}
+CRITICAL - 2022-08-02 09:35:00 --> Undefined variable: user
+#0 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\app\Views\_common\layout.php(810): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\Users\\vinic\\...', 810, Array)
+#1 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\View\View.php(210): include('C:\\Users\\vinic\\...')
+#2 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\View\View.php(226): CodeIgniter\View\View->render('_common/layout', Array, true)
+#4 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\Common.php(1089): CodeIgniter\View\View->render('playlist/musica...', Array, true)
+#5 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\app\Controllers\Playlist.php(14): view('playlist/musica...')
+#6 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(832): App\Controllers\Playlist->playlist('58')
+#7 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Playlist))
+#8 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\vinic\\...')
+#11 {main}
+CRITICAL - 2022-08-02 09:44:27 --> Trying to access array offset on value of type null
+#0 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\app\Models\PlaylistsModel.php(65): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\Users\\vinic\\...', 65, Array)
+#1 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\app\Controllers\Playlist.php(23): App\Models\PlaylistsModel->verificaDono('1', '58')
+#2 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(832): App\Controllers\Playlist->playlist('58')
+#3 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Playlist))
+#4 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\vinic\\...')
+#7 {main}
+CRITICAL - 2022-08-02 09:45:53 --> Undefined variable: playlsit
+#0 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\app\Views\Playlist\musicas.php(6): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\Users\\vinic\\...', 6, Array)
+#1 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\View\View.php(210): include('C:\\Users\\vinic\\...')
+#2 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\Common.php(1089): CodeIgniter\View\View->render('playlist/musica...', Array, true)
+#4 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\app\Controllers\Playlist.php(25): view('playlist/musica...', Array)
+#5 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(832): App\Controllers\Playlist->playlist('58')
+#6 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Playlist))
+#7 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\vinic\\...')
+#10 {main}
+CRITICAL - 2022-08-02 09:46:06 --> Trying to access array offset on value of type null
+#0 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\app\Models\PlaylistsModel.php(65): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\Users\\vinic\\...', 65, Array)
+#1 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\app\Controllers\Playlist.php(23): App\Models\PlaylistsModel->verificaDono('1', 'assets')
+#2 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(832): App\Controllers\Playlist->playlist('assets', 'images', 'faces', 'face15.jpg')
+#3 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Playlist))
+#4 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\vinic\\...')
+#7 {main}
+CRITICAL - 2022-08-02 09:46:14 --> Trying to access array offset on value of type null
+#0 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\app\Models\PlaylistsModel.php(65): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\Users\\vinic\\...', 65, Array)
+#1 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\app\Controllers\Playlist.php(23): App\Models\PlaylistsModel->verificaDono('1', 'assets')
+#2 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(832): App\Controllers\Playlist->playlist('assets', 'images', 'faces', 'face15.jpg')
+#3 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Playlist))
+#4 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\vinic\\...')
+#7 {main}
+CRITICAL - 2022-08-02 11:46:51 --> Trying to access array offset on value of type null
+#0 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\app\Models\PlaylistsModel.php(65): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\Users\\vinic\\...', 65, Array)
+#1 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\app\Controllers\Playlist.php(23): App\Models\PlaylistsModel->verificaDono('3', 'assets')
+#2 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(832): App\Controllers\Playlist->playlist('assets', 'images', 'faces', 'face15.jpg')
+#3 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Playlist))
+#4 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\vinic\\...')
+#7 {main}
+CRITICAL - 2022-08-02 11:57:50 --> Undefined variable: playlist
+#0 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\app\Views\Musica\tabela\musicas_table.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\Users\\vinic\\...', 12, Array)
+#1 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\View\View.php(210): include('C:\\Users\\vinic\\...')
+#2 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\Common.php(1089): CodeIgniter\View\View->render('musica/tabela/m...', Array, true)
+#4 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\app\Controllers\Ajax\Musica.php(22): view('musica/tabela/m...', Array)
+#5 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(832): App\Controllers\Ajax\Musica->musicoMusicas()
+#6 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajax\Musica))
+#7 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\vinic\\...')
+#10 {main}
+CRITICAL - 2022-08-02 11:58:18 --> Undefined index: id
+#0 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\app\Views\Musica\tabela\musicas_table.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\Users\\vinic\\...', 12, Array)
+#1 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\View\View.php(210): include('C:\\Users\\vinic\\...')
+#2 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\Common.php(1089): CodeIgniter\View\View->render('musica/tabela/m...', Array, true)
+#4 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\app\Controllers\Ajax\Musica.php(22): view('musica/tabela/m...', Array)
+#5 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(832): App\Controllers\Ajax\Musica->musicoMusicas()
+#6 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajax\Musica))
+#7 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\vinic\\...')
+#10 {main}
+CRITICAL - 2022-08-02 11:58:19 --> Undefined index: id
+#0 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\app\Views\Musica\tabela\musicas_table.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\Users\\vinic\\...', 12, Array)
+#1 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\View\View.php(210): include('C:\\Users\\vinic\\...')
+#2 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\Common.php(1089): CodeIgniter\View\View->render('musica/tabela/m...', Array, true)
+#4 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\app\Controllers\Ajax\Musica.php(22): view('musica/tabela/m...', Array)
+#5 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(832): App\Controllers\Ajax\Musica->musicoMusicas()
+#6 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajax\Musica))
+#7 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\vinic\\...')
+#10 {main}
+CRITICAL - 2022-08-02 11:59:12 --> Trying to access array offset on value of type null
+#0 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\app\Models\PlaylistsModel.php(65): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\Users\\vinic\\...', 65, Array)
+#1 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\app\Controllers\Playlist.php(23): App\Models\PlaylistsModel->verificaDono('3', 'assets')
+#2 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(832): App\Controllers\Playlist->playlist('assets', 'images', 'faces', 'face15.jpg')
+#3 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Playlist))
+#4 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\vinic\\...')
+#7 {main}
+CRITICAL - 2022-08-02 11:59:16 --> Trying to access array offset on value of type null
+#0 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\app\Models\PlaylistsModel.php(65): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\Users\\vinic\\...', 65, Array)
+#1 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\app\Controllers\Playlist.php(23): App\Models\PlaylistsModel->verificaDono('3', 'assets')
+#2 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(832): App\Controllers\Playlist->playlist('assets', 'images', 'faces', 'face15.jpg')
+#3 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Playlist))
+#4 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\vinic\\...')
+#7 {main}
+CRITICAL - 2022-08-02 13:03:22 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::first()
+#0 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\app\Controllers\Ajax\Musica.php(42): App\Models\MusicasModel->getMusicaByRegistro('7')
+#1 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(832): App\Controllers\Ajax\Musica->modalAlterarMusica('7')
+#2 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajax\Musica))
+#3 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\vinic\\...')
+#6 {main}
+CRITICAL - 2022-08-02 13:03:28 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::first()
+#0 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\app\Controllers\Ajax\Musica.php(42): App\Models\MusicasModel->getMusicaByRegistro('7')
+#1 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(832): App\Controllers\Ajax\Musica->modalAlterarMusica('7')
+#2 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajax\Musica))
+#3 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\vinic\\...')
+#6 {main}
+CRITICAL - 2022-08-02 13:05:20 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::first()
+#0 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\app\Controllers\Ajax\Musica.php(42): App\Models\MusicasModel->getMusicaByRegistro('1')
+#1 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(832): App\Controllers\Ajax\Musica->modalAlterarMusica('1')
+#2 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajax\Musica))
+#3 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\vinic\\...')
+#6 {main}
+CRITICAL - 2022-08-02 13:05:26 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::first()
+#0 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\app\Controllers\Ajax\Musica.php(42): App\Models\MusicasModel->getMusicaByRegistro('1')
+#1 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(832): App\Controllers\Ajax\Musica->modalAlterarMusica('1')
+#2 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajax\Musica))
+#3 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\vinic\\...')
+#6 {main}
+CRITICAL - 2022-08-02 13:21:16 --> Trying to access array offset on value of type null
+#0 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\app\Models\PlaylistsModel.php(65): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\Users\\vinic\\...', 65, Array)
+#1 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\app\Controllers\Playlist.php(23): App\Models\PlaylistsModel->verificaDono('3', 'assets')
+#2 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(832): App\Controllers\Playlist->playlist('assets', 'images', 'faces', 'face15.jpg')
+#3 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Playlist))
+#4 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\vinic\\...')
+#7 {main}
+CRITICAL - 2022-08-02 14:08:21 --> Trying to access array offset on value of type null
+#0 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\app\Models\PlaylistsModel.php(65): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\Users\\vinic\\...', 65, Array)
+#1 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\app\Controllers\Playlist.php(23): App\Models\PlaylistsModel->verificaDono('3', 'assets')
+#2 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(832): App\Controllers\Playlist->playlist('assets', 'images', 'faces', 'face15.jpg')
+#3 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Playlist))
+#4 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\vinic\\...')
+#7 {main}
+CRITICAL - 2022-08-02 15:18:11 --> Trying to access array offset on value of type null
+#0 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\app\Models\PlaylistsModel.php(65): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\Users\\vinic\\...', 65, Array)
+#1 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\app\Controllers\Playlist.php(23): App\Models\PlaylistsModel->verificaDono('3', 'assets')
+#2 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(832): App\Controllers\Playlist->playlist('assets', 'images', 'faces', 'face15.jpg')
+#3 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Playlist))
+#4 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\vinic\\...')
+#7 {main}
+ERROR - 2022-08-02 15:18:11 --> Table 'musically.playlistsmusicas' doesn't exist
+CRITICAL - 2022-08-02 15:18:11 --> Table 'musically.playlistsmusicas' doesn't exist
+#0 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `musicas...', 0)
+#1 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `musicas...')
+#2 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `musicas...')
+#3 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT `musicas...', Array, false)
+#4 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\Model.php(728): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\app\Models\PlaylistsMusicasModel.php(59): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\app\Controllers\Ajax\Playlist.php(36): App\Models\PlaylistsMusicasModel->getMusicasPlaylists('66')
+#7 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(832): App\Controllers\Ajax\Playlist->getMusicas('66')
+#8 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajax\Playlist))
+#9 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\vinic\\...')
+#12 {main}
+CRITICAL - 2022-08-02 15:20:32 --> Trying to access array offset on value of type null
+#0 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\app\Models\PlaylistsModel.php(65): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\Users\\vinic\\...', 65, Array)
+#1 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\app\Controllers\Playlist.php(23): App\Models\PlaylistsModel->verificaDono('3', 'assets')
+#2 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(832): App\Controllers\Playlist->playlist('assets', 'images', 'faces', 'face15.jpg')
+#3 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Playlist))
+#4 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\vinic\\...')
+#7 {main}
+ERROR - 2022-08-02 15:20:32 --> Table 'musically.playlistsmusicas' doesn't exist
+CRITICAL - 2022-08-02 15:20:32 --> Table 'musically.playlistsmusicas' doesn't exist
+#0 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `musicas...', 0)
+#1 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `musicas...')
+#2 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `musicas...')
+#3 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT `musicas...', Array, false)
+#4 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\Model.php(728): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\app\Models\PlaylistsMusicasModel.php(59): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\app\Controllers\Ajax\Playlist.php(36): App\Models\PlaylistsMusicasModel->getMusicasPlaylists('66')
+#7 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(832): App\Controllers\Ajax\Playlist->getMusicas('66')
+#8 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajax\Playlist))
+#9 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\vinic\\...')
+#12 {main}
+ERROR - 2022-08-02 15:20:34 --> Table 'musically.playlistsmusicas' doesn't exist
+CRITICAL - 2022-08-02 15:20:34 --> Table 'musically.playlistsmusicas' doesn't exist
+#0 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `musicas...', 0)
+#1 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `musicas...')
+#2 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `musicas...')
+#3 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT `musicas...', Array, false)
+#4 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\Model.php(728): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\app\Models\PlaylistsMusicasModel.php(59): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\app\Controllers\Ajax\Playlist.php(36): App\Models\PlaylistsMusicasModel->getMusicasPlaylists('66')
+#7 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(832): App\Controllers\Ajax\Playlist->getMusicas('66')
+#8 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajax\Playlist))
+#9 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\vinic\\...')
+#12 {main}
+ERROR - 2022-08-02 15:20:59 --> Unknown column 'usuario.nome' in 'field list'
+CRITICAL - 2022-08-02 15:20:59 --> Unknown column 'usuario.nome' in 'field list'
+#0 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `musicas...', 0)
+#1 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `musicas...')
+#2 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `musicas...')
+#3 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT `musicas...', Array, false)
+#4 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\Model.php(728): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\app\Models\PlaylistsMusicasModel.php(59): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\app\Controllers\Ajax\Playlist.php(36): App\Models\PlaylistsMusicasModel->getMusicasPlaylists('66')
+#7 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(832): App\Controllers\Ajax\Playlist->getMusicas('66')
+#8 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajax\Playlist))
+#9 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\vinic\\...')
+#12 {main}
+CRITICAL - 2022-08-02 15:21:10 --> Undefined index: id
+#0 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\app\Views\Playlist\tabela\musicas_table.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\Users\\vinic\\...', 12, Array)
+#1 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\View\View.php(210): include('C:\\Users\\vinic\\...')
+#2 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\Common.php(1089): CodeIgniter\View\View->render('playlist/tabela...', Array, true)
+#4 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\app\Controllers\Ajax\Playlist.php(36): view('playlist/tabela...', Array)
+#5 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(832): App\Controllers\Ajax\Playlist->getMusicas('66')
+#6 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajax\Playlist))
+#7 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\vinic\\...')
+#10 {main}
+CRITICAL - 2022-08-02 15:21:37 --> Trying to access array offset on value of type null
+#0 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\app\Models\PlaylistsModel.php(65): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\Users\\vinic\\...', 65, Array)
+#1 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\app\Controllers\Playlist.php(23): App\Models\PlaylistsModel->verificaDono('3', 'assets')
+#2 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(832): App\Controllers\Playlist->playlist('assets', 'images', 'faces', 'face15.jpg')
+#3 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Playlist))
+#4 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\vinic\\...')
+#7 {main}
+CRITICAL - 2022-08-02 15:22:18 --> Trying to access array offset on value of type null
+#0 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\app\Models\PlaylistsModel.php(65): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\Users\\vinic\\...', 65, Array)
+#1 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\app\Controllers\Playlist.php(23): App\Models\PlaylistsModel->verificaDono('3', 'assets')
+#2 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(832): App\Controllers\Playlist->playlist('assets', 'images', 'faces', 'face15.jpg')
+#3 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Playlist))
+#4 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\vinic\\...')
+#7 {main}
+CRITICAL - 2022-08-02 16:48:34 --> Trying to access array offset on value of type null
+#0 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\app\Models\PlaylistsModel.php(65): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\Users\\vinic\\...', 65, Array)
+#1 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\app\Controllers\Playlist.php(23): App\Models\PlaylistsModel->verificaDono('3', 'assets')
+#2 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(832): App\Controllers\Playlist->playlist('assets', 'images', 'faces', 'face15.jpg')
+#3 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Playlist))
+#4 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\vinic\\...')
+#7 {main}
+CRITICAL - 2022-08-02 16:51:21 --> Trying to access array offset on value of type null
+#0 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\app\Models\PlaylistsModel.php(65): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\Users\\vinic\\...', 65, Array)
+#1 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\app\Controllers\Playlist.php(23): App\Models\PlaylistsModel->verificaDono('3', 'assets')
+#2 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(832): App\Controllers\Playlist->playlist('assets', 'images', 'faces', 'face15.jpg')
+#3 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Playlist))
+#4 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\vinic\\...')
+#7 {main}
+CRITICAL - 2022-08-02 17:42:37 --> Trying to access array offset on value of type null
+#0 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\app\Models\PlaylistsModel.php(65): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\Users\\vinic\\...', 65, Array)
+#1 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\app\Controllers\Playlist.php(23): App\Models\PlaylistsModel->verificaDono('3', 'assets')
+#2 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(832): App\Controllers\Playlist->playlist('assets', 'images', 'faces', 'face15.jpg')
+#3 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Playlist))
+#4 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\vinic\\...')
+#7 {main}
+CRITICAL - 2022-08-02 17:47:12 --> Trying to access array offset on value of type null
+#0 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\app\Models\PlaylistsModel.php(65): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\Users\\vinic\\...', 65, Array)
+#1 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\app\Controllers\Playlist.php(23): App\Models\PlaylistsModel->verificaDono('3', 'assets')
+#2 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(832): App\Controllers\Playlist->playlist('assets', 'images', 'faces', 'face15.jpg')
+#3 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Playlist))
+#4 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\vinic\\...')
+#7 {main}
+CRITICAL - 2022-08-02 18:32:50 --> Trying to access array offset on value of type null
+#0 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\app\Models\PlaylistsModel.php(65): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\Users\\vinic\\...', 65, Array)
+#1 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\app\Controllers\Playlist.php(23): App\Models\PlaylistsModel->verificaDono('3', 'assets')
+#2 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(832): App\Controllers\Playlist->playlist('assets', 'images', 'faces', 'face15.jpg')
+#3 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Playlist))
+#4 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\vinic\\...')
+#7 {main}
+CRITICAL - 2022-08-02 18:32:51 --> Call to undefined method App\Models\PlaylistsMusicasModel::whereNot
+#0 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\app\Models\PlaylistsMusicasModel.php(67): CodeIgniter\Model->__call('whereNot', Array)
+#1 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\app\Controllers\Ajax\Playlist.php(41): App\Models\PlaylistsMusicasModel->getMusicasNotInPlaylists('66')
+#2 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(832): App\Controllers\Ajax\Playlist->getMusicasNotInPlaylistTableModal('66')
+#3 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajax\Playlist))
+#4 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\vinic\\...')
+#7 {main}
+CRITICAL - 2022-08-02 18:32:59 --> Call to undefined method App\Models\PlaylistsMusicasModel::whereNot
+#0 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\app\Models\PlaylistsMusicasModel.php(67): CodeIgniter\Model->__call('whereNot', Array)
+#1 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\app\Controllers\Ajax\Playlist.php(41): App\Models\PlaylistsMusicasModel->getMusicasNotInPlaylists('66')
+#2 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(832): App\Controllers\Ajax\Playlist->getMusicasNotInPlaylistTableModal('66')
+#3 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajax\Playlist))
+#4 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\vinic\\...')
+#7 {main}
+CRITICAL - 2022-08-02 18:33:03 --> Call to undefined method App\Models\PlaylistsMusicasModel::whereNot
+#0 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\app\Models\PlaylistsMusicasModel.php(67): CodeIgniter\Model->__call('whereNot', Array)
+#1 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\app\Controllers\Ajax\Playlist.php(41): App\Models\PlaylistsMusicasModel->getMusicasNotInPlaylists('66')
+#2 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(832): App\Controllers\Ajax\Playlist->getMusicasNotInPlaylistTableModal('66')
+#3 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajax\Playlist))
+#4 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\vinic\\...')
+#7 {main}
+CRITICAL - 2022-08-02 18:34:07 --> Undefined variable: musica
+#0 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\app\Views\Playlist\modal\tabela_adicionar_modal.php(37): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\Users\\vinic\\...', 37, Array)
+#1 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\View\View.php(210): include('C:\\Users\\vinic\\...')
+#2 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\Common.php(1089): CodeIgniter\View\View->render('playlist/modal/...', Array, true)
+#4 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\app\Controllers\Ajax\Playlist.php(41): view('playlist/modal/...', Array)
+#5 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(832): App\Controllers\Ajax\Playlist->getMusicasNotInPlaylistTableModal('66')
+#6 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajax\Playlist))
+#7 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\vinic\\...')
+#10 {main}
+CRITICAL - 2022-08-02 18:35:10 --> Trying to access array offset on value of type null
+#0 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\app\Models\PlaylistsModel.php(65): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\Users\\vinic\\...', 65, Array)
+#1 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\app\Controllers\Playlist.php(23): App\Models\PlaylistsModel->verificaDono('3', 'assets')
+#2 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(832): App\Controllers\Playlist->playlist('assets', 'images', 'faces', 'face15.jpg')
+#3 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Playlist))
+#4 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\Users\vinic\Documents\facul\Engenharia de Software\MusicAlly\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\vinic\\...')
+#7 {main}
