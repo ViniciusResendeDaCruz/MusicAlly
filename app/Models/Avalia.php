@@ -4,17 +4,17 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class UsuariosModel extends Model
+class Avalia extends Model
 {
     protected $DBGroup          = 'default';
-    protected $table            = 'usuarios';
+    protected $table            = 'usuario_avalia_musica';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
     protected $insertID         = 0;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['id','nome','sobrenome','email','senha','tipo'];
+    protected $allowedFields    = ['usuario_id','musica_registro','avaliacao'];
 
     // Dates
     protected $useTimestamps = false;
@@ -40,33 +40,14 @@ class UsuariosModel extends Model
     protected $beforeDelete   = [];
     protected $afterDelete    = [];
 
-    public function cadastrarUsuário($nome,$email,$senha,$tipo)
+    public function novaAvaliacao($usuario_id,$musica_registro,$avaliacao)
     {
-        $senha = password_hash($senha,PASSWORD_DEFAULT);
-        return $this->insert(['nome'=>$nome,'email'=>$email,'senha'=>$senha,'tipo'=>$tipo]);
+        $verifica = $this->where(['usuario_id'=>$usuario_id,'musica_registro'=>$musica_registro])->first();
+        if (!is_null($verifica)) {
+            $this->set('avaliacao',$avaliacao)->where(['usuario_id'=>$usuario_id,'musica_registro'=>$musica_registro])->update();
+            dd($this->db->getLastQuery());
+        }
+        return $this->insert(['usuario_id'=>$usuario_id,'musica_registro'=>$musica_registro,'avaliacao'=>$avaliacao]);
     }
-
-    public function alteraCadastro($id,$nome,$sobrenome,$email,$senha)
-    {
-        $senha = password_hash($senha,PASSWORD_DEFAULT);
-        return $this->update($id,['nome'=>$nome,'email'=>$email,'senha'=>$senha,'sobrenome'=>$sobrenome]);
-    }
-
-    public function removeCadastro($id)
-    {
-        return $this->where('id',$id)->delete();
-    }
-
-    public function getUserByEmail($email)
-    {
-        return $this->where('email',$email)->first();
-    }
-
-    public function verificaLogin($email,$senha)
-    {
-        $user = $this->getUserByEmail($email);
-
-        if (isset($user['senha']) and password_verify($senha,$user['senha'])) return $user;
-        return null;
-    }
+    
 }

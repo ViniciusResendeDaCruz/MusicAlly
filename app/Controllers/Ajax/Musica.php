@@ -3,13 +3,17 @@
 namespace App\Controllers\Ajax;
 
 use App\Controllers\BaseController;
+use App\Models\Avalia;
 use App\Models\MusicasModel;
 
 class Musica extends BaseController
 {
     private $musicaModel;
+    private $avaliaModel;
+
 
     public function __construct() {
+        $this->avaliaModel = new Avalia();
         $this->musicaModel = new MusicasModel();
     }
     public function index()
@@ -19,7 +23,7 @@ class Musica extends BaseController
 
     public function musicoMusicas()
     {
-        return view('musica/tabela/musicas_table',['musicas'=>$this->musicaModel->getMusicasByMusicoId($this->session->user['id'])]);
+        return view('mymusica/tabela/musicas_table',['musicas'=>$this->musicaModel->getMusicasByMusicoId($this->session->user['id'])]);
     }
 
     public function novaMusica($nome,$duracao,$arquivo)
@@ -39,6 +43,16 @@ class Musica extends BaseController
 
     public function modalAlterarMusica($registro)
     {
-        return view('musica/modal/alterarModal',['musica'=>$this->musicaModel->getMusicaByRegistro($registro)]);
+        return view('mymusica/modal/alterarModal',['musica'=>$this->musicaModel->getMusicaByRegistro($registro)]);
+    }
+
+    public function newRating($registro,$rating)
+    {
+        $this->avaliaModel->novaAvaliacao($this->session->user['id'],$registro,$rating);
+    }
+
+    public function newPlay($registro)
+    {
+        return $this->musicaModel->newPlay($registro);
     }
 }

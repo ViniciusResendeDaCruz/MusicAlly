@@ -176,6 +176,10 @@
 			});
 	}
 
+	function abrirMusica(registro) {
+		window.location.href = baseUrl + "/musica/player/" + registro
+	}
+
 
 	$(document).ready(function() {
 		initTable()

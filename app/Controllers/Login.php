@@ -22,8 +22,12 @@ class Login extends BaseController
     {
         $post = $this->request->getPost();
         $user = $this->usuariosModel->verificaLogin($post['email'],$post['senha']);
+        if (isset($post['lembereme']) and $post['lembreme'] == 'on') {
+            $isLoggedIn = true;
+        } else $isLoggedIn = false;
+
         if (!is_null($user)){
-            $this->session->set(['user'=>$user,'isLoggedIn'=>true]);
+            $this->session->set(['user'=>$user,'isLoggedIn'=>$isLoggedIn]);
             return redirect()->to('home');
         }
         return redirect()->to('login')->with('mensagem','error');

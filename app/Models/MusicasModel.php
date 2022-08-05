@@ -14,7 +14,7 @@ class MusicasModel extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['registro','nome','duracao','arquivo','musico_id'];
+    protected $allowedFields    = ['registro','nome','duracao','arquivo','musico_id','reproducoes'];
 
     // Dates
     protected $useTimestamps = false;
@@ -54,10 +54,14 @@ class MusicasModel extends Model
     {
         return $this->where('registro',$registro)->first();
     }
+    // SELECT musicas.*,AVG(usuario_avalia_musica.avaliacao) as media FROM `musicas` 
+    // LEFT JOIN usuario_avalia_musica on usuario_avalia_musica.musica_registro = registro
+    // where musico_id = '3'
+    // GROUP BY (musicas.registro)
 
     public function getMusicasByMusicoId($musico_id)
     {
-        return $this->where('musico_id',$musico_id)->get()->getResultArray();
+        return $this->select('musicas.*,AVG(usuario_avalia_musica.avaliacao) as media')->join('usuario_avalia_musica','usuario_avalia_musica.musica_registro = registro','left')->where('musico_id',$musico_id)->groupBy('musicas.registro')->get()->getResultArray();
     }
 
     public function alteraMusica($registro,$nome,$duracao,$arquivo,$musico_id)
@@ -83,6 +87,18 @@ class MusicasModel extends Model
         $subquery = $this->db->table('playlists_musicas')->select('musicas.registro')->join('musicas','musicas.registro = musica_id')->where('playlist_id',$playlist_id);
         // dd($subquery);
         return $this->select('musicas.*,usuarios.nome as artistaNome')->join('usuarios','usuarios.id = musicas.musico_id','left')->whereNotIn('musicas.registro',$subquery)->get()->getResultArray();
+    }
+
+    public function newRating($registro,$rating)
+    {
+        # code...
+    }
+
+    public function newPlay($registro)
+    {
+        $this->set('reproducoes','reproducoes+1',FALSE);
+        return $this->update($registro);
+        // dd($this->db->getLastQuery());
     }
 
 }
