@@ -17,7 +17,7 @@
 						</div>
 						<div class="form-group ">
 							<label for="duracao">Duração</label>
-							<input type="text" name="duracao" id="duracaoAlterarInput" class="form-control" style="width: 350px;" value="<?php echo $musica['duracao'] ?>">
+							<input type="number" name="duracao" id="duracaoAlterarInput" class="form-control" style="width: 350px;" value="<?php echo $musica['duracao'] ?>">
 						</div>
 					</div>
 					<div class="row">

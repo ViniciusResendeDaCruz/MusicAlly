@@ -32,18 +32,19 @@
 					<div class="row">
 						<div class="form-group ">
 							<label for="nome">Nome</label>
-							<input type="text" name="nome" id="nomeInput" class="form-control" style="width: 350px;">
+							<input type="text" name="nome" id="nomeInput" class="form-control" style="width: 350px;" placeholder="Insira o nome">
 
 						</div>
 						<div class="form-group ">
 							<label for="duracao">Duração</label>
-							<input type="text" name="duracao" id="duracaoInput" class="form-control" style="width: 350px;">
+							<input type="number" name="duracao" id="duracaoInput" class="form-control" style="width: 350px;" placeholder="Insira a duração em minutos(ex. 5,10,20)">
 						</div>
 					</div>
 					<div class="row">
 						<div class="form-group ">
 							<label for="duracao">Arquivo</label>
-							<input type="text" name="arquivo" id="arquivoInput" class="form-control" style="width: 350px;">
+							
+							<input type="text" name="arquivo" id="arquivoInput" class="form-control" style="width: 350px;" placeholder="Insira o local do arquivo">
 						</div>
 					</div>
 				</div>
@@ -93,6 +94,10 @@
 		let nome = $("#nomeInput").val()
 		let duracao = $("#duracaoInput").val()
 		let arquivo = $("#arquivoInput").val()
+		if(nome == '' || duracao == '' || arquivo ==''){
+			window.alert("Insira todos os dados!")
+			return
+		}
 
 		$.ajax({
 			type: "POST",
@@ -139,6 +144,11 @@
 		let duracao = $("#duracaoAlterarInput").val()
 		let arquivo = $("#arquivoAlterarInput").val()
 
+		if(nome == '' || duracao == '' || arquivo ==''){
+			window.alert("Insira todos os dados!")
+			return
+		}
+		
 		$.ajax({
 			type: "POST",
 			url: baseUrl + `/ajax/musica/alteraMusica/${registro}/${nome}/${duracao}/${arquivo}`,

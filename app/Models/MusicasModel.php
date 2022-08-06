@@ -52,7 +52,7 @@ class MusicasModel extends Model
 
     public function getMusicaByRegistro($registro)
     {
-        return $this->where('registro',$registro)->first();
+        return $this->select('musicas.*,usuarios.nome as artista')->join('usuarios','usuarios.id = musico_id')->where('registro',$registro)->first();
     }
     // SELECT musicas.*,AVG(usuario_avalia_musica.avaliacao) as media FROM `musicas` 
     // LEFT JOIN usuario_avalia_musica on usuario_avalia_musica.musica_registro = registro
@@ -89,10 +89,7 @@ class MusicasModel extends Model
         return $this->select('musicas.*,usuarios.nome as artistaNome')->join('usuarios','usuarios.id = musicas.musico_id','left')->whereNotIn('musicas.registro',$subquery)->get()->getResultArray();
     }
 
-    public function newRating($registro,$rating)
-    {
-        # code...
-    }
+    
 
     public function newPlay($registro)
     {

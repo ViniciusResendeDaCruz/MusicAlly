@@ -37,6 +37,7 @@
 				</div>
 			</div>
 			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" onclick="removerPlaylist(<?php echo $playlist['id'] ?>)">Remover Playlist</button>
 				<button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
 				<button type="button" class="btn btn-primary" onclick="salvarEdicaoPlaylist(<?php echo $playlist['id'] ?>)">Salvar</button>
 			</div>
@@ -180,6 +181,9 @@
 		window.location.href = baseUrl + "/musica/player/" + registro
 	}
 
+	function removerPlaylist(id) {
+		//warning todo;
+	}
 
 	$(document).ready(function() {
 		initTable()

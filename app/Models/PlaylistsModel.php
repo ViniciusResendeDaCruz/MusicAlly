@@ -14,7 +14,7 @@ class PlaylistsModel extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['id','nome','descricao','publica','usuario_id'];
+    protected $allowedFields    = ['id','nome','descricao','publica','usuario_id','acessos'];
 
     // Dates
     protected $useTimestamps = false;
@@ -62,14 +62,38 @@ class PlaylistsModel extends Model
 
     public function verificaDono($usuario_id, $playlist_id)
     {
-        $dono_id = $this->select('usuario_id')->where('id',$playlist_id)->first()['usuario_id'];
+        $playlist = $this->where('id',$playlist_id)->first();
+        // dd($playlist);
+        if($playlist['publica'] == "1") return true;
         // dd($dono_id);
 
-        return $usuario_id == $dono_id ? true : false;
+        return $usuario_id == $playlist['usuario_id'] ? true : false;
     }
 
     public function getPlaylistById($id)
     {
         return $this->where('id',$id)->first();
+    }
+
+    // SELECT playlists.*, usuarios.nome as dono FROM playlists
+    // JOIN usuarios on usuarios.id = usuario_id
+    // where publica = true
+
+    // ORDER BY RAND()
+    // LIMIT 5
+
+    public function getRandPlaylists($quantidade)
+    {
+        return $this->select('playlists.*,usuarios.nome as dono')->
+        join('usuarios','usuarios.id = usuario_id')->
+        where('publica',true)->
+        orderBy('RAND()')->
+        get($quantidade)->getResultArray();
+    }
+
+    public function contabilizaAcesso($playlist_id)
+    {
+        $this->set('acessos','acessos+1',FALSE);
+        return $this->update($playlist_id);
     }
 }

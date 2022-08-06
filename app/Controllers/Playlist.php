@@ -20,7 +20,7 @@ class Playlist extends BaseController
     }
 
     public function playlist($id){
-        if(! $this->playlistModel->verificaDono($this->session->user['id'],$id)) return redirect()->to('login');
+        if(! $this->playlistModel->verificaDono($this->session->user['id'],$id)) return redirect()->to('dashboard');
 
         return view('playlist/musicas',['user'=>$this->session->user, 'playlist'=>$this->playlistModel->getPlaylistById($id)]);
     }

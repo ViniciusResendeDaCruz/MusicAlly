@@ -29,8 +29,8 @@
 				</div>
 			</div>
 			<div class="modal-footer">
-				<button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-				<!-- <button type="button" class="btn btn-danger" onclick="">Remover</button> -->
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button> -->
+				 <button type="button" class="btn btn-danger" onclick="">Remover</button>
 				<button type="button" class="btn btn-primary" onclick="">Alterar</button> 
 			</div>
 		</div>

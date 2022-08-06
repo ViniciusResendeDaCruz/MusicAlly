@@ -28,7 +28,7 @@ class Login extends BaseController
 
         if (!is_null($user)){
             $this->session->set(['user'=>$user,'isLoggedIn'=>$isLoggedIn]);
-            return redirect()->to('home');
+            return redirect()->to('dashboard');
         }
         return redirect()->to('login')->with('mensagem','error');
     }

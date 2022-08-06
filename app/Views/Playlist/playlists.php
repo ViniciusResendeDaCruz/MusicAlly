@@ -112,6 +112,7 @@
 			success: function(response) {
 				$("#toastMessage").html("<div class=\"alert alert-success\" style=\"margin:0px;\">Playlist adicionada com sucesso</div>")
 				$("#myToast").toast('show')
+				initTable()
 			}
 		});
 		$('#adicionarModal').modal('hide')

@@ -240,6 +240,8 @@
 
 		<div class="title"><?php echo $musica['nome'] ?>
 		</div>
+		<div class="artist"><?php echo $musica['artista'] ?></div>
+
 		<div class="time-tracker">
 			<div class="timer">
 				<div id="Slider" class="bg">
