@@ -16,12 +16,12 @@ class Playlist extends BaseController
         $this->playlistMusicasModel = new PlaylistsMusicasModel();
     }
     public function index(){
-        return view('playlist/playlists',['user'=>$this->session->user]);
+        return view('Playlist/playlists',['user'=>$this->session->user]);
     }
 
     public function playlist($id){
         if(! $this->playlistModel->verificaDono($this->session->user['id'],$id)) return redirect()->to('dashboard');
 
-        return view('playlist/musicas',['user'=>$this->session->user, 'playlist'=>$this->playlistModel->getPlaylistById($id)]);
+        return view('Playlist/musicas',['user'=>$this->session->user, 'playlist'=>$this->playlistModel->getPlaylistById($id)]);
     }
 }

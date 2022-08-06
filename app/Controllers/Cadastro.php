@@ -21,7 +21,7 @@ class Cadastro extends BaseController
     {
         $post = $this->request->getPost();
 
-        if($post['senha'] != $post['repeteSenha']) return view('cadastro/cadastro',['mensagem'=>'As senhas não coincidem']);
+        if($post['senha'] != $post['repeteSenha']) return view('Cadastro/cadastro',['mensagem'=>'As senhas não coincidem']);
         if(isset($post['produtor'])) $tipo =  'P';
         else $tipo = 'N';
 

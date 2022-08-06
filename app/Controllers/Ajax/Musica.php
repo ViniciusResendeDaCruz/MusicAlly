@@ -18,12 +18,12 @@ class Musica extends BaseController
     }
     public function index()
     {
-        return redirect()->to('musica');
+        return redirect()->to('Musica');
     }
 
     public function musicoMusicas()
     {
-        return view('mymusica/tabela/musicas_table',['musicas'=>$this->musicaModel->getMusicasByMusicoId($this->session->user['id'])]);
+        return view('myMusica/tabela/musicas_table',['musicas'=>$this->musicaModel->getMusicasByMusicoId($this->session->user['id'])]);
     }
 
     public function novaMusica($nome,$duracao,$arquivo)
@@ -43,7 +43,7 @@ class Musica extends BaseController
 
     public function modalAlterarMusica($registro)
     {
-        return view('mymusica/modal/alterarModal',['musica'=>$this->musicaModel->getMusicaByRegistro($registro)]);
+        return view('myMusica/modal/alterarModal',['musica'=>$this->musicaModel->getMusicaByRegistro($registro)]);
     }
 
     public function newRating($registro,$rating)

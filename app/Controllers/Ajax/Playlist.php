@@ -24,7 +24,7 @@ class Playlist extends BaseController
     }
     public function userPlaylists()
     {
-        return view('playlist/tabela/playlist_table',
+        return view('Playlist/tabela/playlist_table',
         ['playlists'=>$this->playlistModel->getUserPlaylists($this->session->user['id'])]);
     }
 
@@ -43,12 +43,12 @@ class Playlist extends BaseController
     }
 
     public function getMusicas($playlist_id){
-        return view('playlist/tabela/musicas_table',['musicas'=>$this->playlist_musicas->getMusicasPlaylists($playlist_id),'playlist_id'=>$playlist_id]);
+        return view('Playlist/tabela/musicas_table',['musicas'=>$this->playlist_musicas->getMusicasPlaylists($playlist_id),'playlist_id'=>$playlist_id]);
     }
 
     public function getMusicasNotInPlaylistTableModal($playlist_id)
     {
-        return view('playlist/modal/tabela_adicionar_modal',['musicas'=>$this->musicasModel->getMusicasNotInPlaylists($playlist_id),'playlist_id'=>$playlist_id]);
+        return view('Playlist/modal/tabela_adicionar_modal',['musicas'=>$this->musicasModel->getMusicasNotInPlaylists($playlist_id),'playlist_id'=>$playlist_id]);
     }
 
     public function adicionarMusicaPlaylist($id_musica,$id_playlist)

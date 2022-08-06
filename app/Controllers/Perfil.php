@@ -15,7 +15,7 @@ class Perfil extends BaseController
 
     public function index()
     {
-        return view('perfil/perfil',['user'=>$this->session->user]);
+        return view('Perfil/perfil',['user'=>$this->session->user]);
     }
 
     public function alterarDados()
@@ -30,7 +30,7 @@ class Perfil extends BaseController
 
         $this->session->set('user',$user);
 
-        return redirect()->to('perfil');
+        return redirect()->to('Perfil');
     }
 
     public function excluirConta()

@@ -15,7 +15,7 @@ class Login extends BaseController
     public function index()
     {
         if(isset($this->session->mensagem))return view('Login/login',['mensagem'=>$this->session->mensagem]);
-        return view('login/login');
+        return view('Login/login');
     }
 
     public function login()
@@ -30,6 +30,6 @@ class Login extends BaseController
             $this->session->set(['user'=>$user,'isLoggedIn'=>$isLoggedIn]);
             return redirect()->to('dashboard');
         }
-        return redirect()->to('login')->with('mensagem','error');
+        return redirect()->to('Login')->with('mensagem','error');
     }
 }

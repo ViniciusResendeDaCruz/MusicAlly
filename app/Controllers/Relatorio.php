@@ -8,6 +8,6 @@ class Relatorio extends BaseController
 {
     public function index()
     {
-        return view('relatorio/relatorio',['user'=>$this->session->user]);
+        return view('Relatorio/relatorio',['user'=>$this->session->user]);
     }
 }
