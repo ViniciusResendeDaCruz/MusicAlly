@@ -65,4 +65,9 @@ class Playlist extends BaseController
     {
         return $this->playlistModel->contabilizaAcesso($playlist_id);
     }
+
+    public function removerPlaylist($playlist_id)
+    {
+        return $this->playlistModel->removerPlaylist($playlist_id);
+    }
 }

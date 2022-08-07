@@ -49,5 +49,12 @@ class Avalia extends Model
         }
         return $this->insert(['usuario_id'=>$usuario_id,'musica_registro'=>$musica_registro,'avaliacao'=>$avaliacao]);
     }
+
+    public function getAvaliacaoMusica($regsitro)
+    {
+        //SELECT AVG(usuario_avalia_musica.avaliacao) as media FROM `usuario_avalia_musica` where musica_registro = '1'
+
+        return $this->select('AVG(usuario_avalia_musica.avaliacao) as media')->where('musica_registro',$regsitro)->first()['media'];
+    }
     
 }

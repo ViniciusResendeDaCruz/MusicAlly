@@ -56,6 +56,11 @@ class MusicasModel extends Model
     }
     // SELECT musicas.*,AVG(usuario_avalia_musica.avaliacao) as media FROM `musicas` 
     // LEFT JOIN usuario_avalia_musica on usuario_avalia_musica.musica_registro = registro
+    // where musica_registro = '1'
+    // GROUP BY (musicas.registro)
+    
+    // SELECT musicas.*,AVG(usuario_avalia_musica.avaliacao) as media FROM `musicas` 
+    // LEFT JOIN usuario_avalia_musica on usuario_avalia_musica.musica_registro = registro
     // where musico_id = '3'
     // GROUP BY (musicas.registro)
 
@@ -96,6 +101,11 @@ class MusicasModel extends Model
         $this->set('reproducoes','reproducoes+1',FALSE);
         return $this->update($registro);
         // dd($this->db->getLastQuery());
+    }
+
+    public function getTop($n = 5)
+    {
+        return $this->select('musicas.*,usuarios.nome as artistaNome')->join('usuarios','usuarios.id = musico_id')->orderBy('reproducoes','DESC')->get(5)->getResultArray();
     }
 
 }

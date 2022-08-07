@@ -5,16 +5,20 @@ namespace App\Controllers\Ajax;
 use App\Controllers\BaseController;
 use App\Models\Avalia;
 use App\Models\MusicasModel;
+use App\Models\OuveModel;
 
 class Musica extends BaseController
 {
     private $musicaModel;
     private $avaliaModel;
+    private $ouveModel;
+
 
 
     public function __construct() {
         $this->avaliaModel = new Avalia();
         $this->musicaModel = new MusicasModel();
+        $this->ouveModel = new OuveModel();
     }
     public function index()
     {
@@ -53,6 +57,8 @@ class Musica extends BaseController
 
     public function newPlay($registro)
     {
+        
+        $this->ouveModel->adicionaReproducao($this->session->user['id'],$registro);
         return $this->musicaModel->newPlay($registro);
     }
 }

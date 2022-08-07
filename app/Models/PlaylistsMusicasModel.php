@@ -77,4 +77,10 @@ class PlaylistsMusicasModel extends Model
         return $this->select('count(*)')->where('playlist_id',$playlist_id);
     }
 
+    public function getQuantidadePlaylistsMusica($musica_registro)
+    {
+        //SELECT count(*) FROM `playlists_musicas` WHERE musica_id = '1'
+        return $this->select('count(*) as qtd')->where('musica_id',$musica_registro)->first();
+    }
+
 }

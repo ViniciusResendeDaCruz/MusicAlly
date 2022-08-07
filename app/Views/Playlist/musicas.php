@@ -12,7 +12,7 @@
 					<span aria-hidden="true">&times;</span>
 				</button>
 			</div>
-			<div class="modal-body">
+			<div class="modal-body" id="alterarBody">
 				<div id="form" class="container">
 					<div class="row">
 						<div class="form-group ">
@@ -37,7 +37,7 @@
 				</div>
 			</div>
 			<div class="modal-footer">
-				<button type="button" class="btn btn-secondary" onclick="removerPlaylist(<?php echo $playlist['id'] ?>)">Remover Playlist</button>
+				<button type="button" class="btn btn-danger" onclick="removerPlaylist(<?php echo $playlist['id'] ?>)">Remover Playlist</button>
 				<button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
 				<button type="button" class="btn btn-primary" onclick="salvarEdicaoPlaylist(<?php echo $playlist['id'] ?>)">Salvar</button>
 			</div>
@@ -182,11 +182,32 @@
 	}
 
 	function removerPlaylist(id) {
-		//warning todo;
+
+		if(window.confirm("Isso irá apagar a playlist do sistema para sempre")){
+
+			$.ajax({
+				type: "POST",
+				url: baseUrl + "/ajax/playlist/removerPlaylist/" + <?php echo $playlist['id'] ?>,
+				success: function (response) {
+					$("#toastMessage").html("<div class=\"alert alert-success\" style=\"margin:0px;\">Playlist removida com sucesso\nVoce será redirecionado em breve</div>")
+					$("#myToast").toast('show')
+					$("#alterarPlaylistModal").modal('hide')
+					setTimeout(function() { window.location.href = baseUrl + "/Playlist" }, 3000);
+					
+				}
+			});
+		}
 	}
 
 	$(document).ready(function() {
 		initTable()
+		$.ajax({
+			type: "POST",
+			url: baseUrl + "/ajax/playlist/acesso/" + <?php echo $playlist['id'] ?>,
+			success: function (response) {
+				console.log('acesso contabilizado');
+			}
+		});
 	})
 </script>
 

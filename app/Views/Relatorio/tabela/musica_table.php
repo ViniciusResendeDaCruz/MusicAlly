@@ -1,6 +1,3 @@
-<?php $this->extend('_common/layout') ?>
-<?php $this->section('content') ?>
-
 <style>
 	@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:400");
 
@@ -19,8 +16,9 @@
 	.wrapperr {
 		position: relative;
 		top: 100%;
-		left: 70%;
+		left: 20%;
 		width: 700px;
+		/* text-align: center; */
 		/* transform: translate(-50%, -50%); */
 	}
 
@@ -90,7 +88,7 @@
 		background: url("data:image/svg+xml;utf8,%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20width%3D%22512%22%20height%3D%22512%22%20viewBox%3D%220%200%20512%20512%22%3E%3Cpath%20fill%3D%22gold%22%20d%3D%22M321.616 190.496l-0.656-0.096-62.384-126.4-62.384 126.4-139.504 20.272 100.944 98.384-23.84 138.928 124.768-65.6 63.024 33.136z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E") center/cover no-repeat, url("data:image/svg+xml;utf8,%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20width%3D%22512%22%20height%3D%22512%22%20viewBox%3D%220%200%20512%20512%22%3E%3Cpath%20fill%3D%22%23ddd%22%20d%3D%22M457.888 210.672l-139.504-20.272-62.384-126.4-62.384 126.4-139.504 20.272 100.944 98.384-23.84 138.928 124.768-65.6 124.768 65.6-23.84-138.928c0 0 100.944-98.384 100.944-98.384z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E") center/cover no-repeat;
 	}
 
-	.c-rating[data-rating-value="1"] button:nth-child(-n+1) {
+	.c-rating[data-rating-value="1.0"] button:nth-child(-n+1) {
 		background: url("data:image/svg+xml;utf8,%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20width%3D%22512%22%20height%3D%22512%22%20viewBox%3D%220%200%20512%20512%22%3E%3Cpath%20fill%3D%22gold%22%20d%3D%22M457.888 210.672l-139.504-20.272-62.384-126.4-62.384 126.4-139.504 20.272 100.944 98.384-23.84 138.928 124.768-65.6 124.768 65.6-23.84-138.928c0 0 100.944-98.384 100.944-98.384z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E") center/cover no-repeat;
 	}
 
@@ -146,7 +144,7 @@
 		background: url("data:image/svg+xml;utf8,%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20width%3D%22512%22%20height%3D%22512%22%20viewBox%3D%220%200%20512%20512%22%3E%3Cpath%20fill%3D%22gold%22%20d%3D%22M321.616 190.496l-0.656-0.096-62.384-126.4-62.384 126.4-139.504 20.272 100.944 98.384-23.84 138.928 124.768-65.6 63.024 33.136z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E") center/cover no-repeat, url("data:image/svg+xml;utf8,%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20width%3D%22512%22%20height%3D%22512%22%20viewBox%3D%220%200%20512%20512%22%3E%3Cpath%20fill%3D%22%23ddd%22%20d%3D%22M457.888 210.672l-139.504-20.272-62.384-126.4-62.384 126.4-139.504 20.272 100.944 98.384-23.84 138.928 124.768-65.6 124.768 65.6-23.84-138.928c0 0 100.944-98.384 100.944-98.384z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E") center/cover no-repeat;
 	}
 
-	.c-rating[data-rating-value="3"] button:nth-child(-n+3) {
+	.c-rating[data-rating-value="3.0"] button:nth-child(-n+3) {
 		background: url("data:image/svg+xml;utf8,%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20width%3D%22512%22%20height%3D%22512%22%20viewBox%3D%220%200%20512%20512%22%3E%3Cpath%20fill%3D%22gold%22%20d%3D%22M457.888 210.672l-139.504-20.272-62.384-126.4-62.384 126.4-139.504 20.272 100.944 98.384-23.84 138.928 124.768-65.6 124.768 65.6-23.84-138.928c0 0 100.944-98.384 100.944-98.384z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E") center/cover no-repeat;
 	}
 
@@ -174,7 +172,7 @@
 		background: url("data:image/svg+xml;utf8,%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20width%3D%22512%22%20height%3D%22512%22%20viewBox%3D%220%200%20512%20512%22%3E%3Cpath%20fill%3D%22gold%22%20d%3D%22M321.616 190.496l-0.656-0.096-62.384-126.4-62.384 126.4-139.504 20.272 100.944 98.384-23.84 138.928 124.768-65.6 63.024 33.136z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E") center/cover no-repeat, url("data:image/svg+xml;utf8,%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20width%3D%22512%22%20height%3D%22512%22%20viewBox%3D%220%200%20512%20512%22%3E%3Cpath%20fill%3D%22%23ddd%22%20d%3D%22M457.888 210.672l-139.504-20.272-62.384-126.4-62.384 126.4-139.504 20.272 100.944 98.384-23.84 138.928 124.768-65.6 124.768 65.6-23.84-138.928c0 0 100.944-98.384 100.944-98.384z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E") center/cover no-repeat;
 	}
 
-	.c-rating[data-rating-value="4"] button:nth-child(-n+4) {
+	.c-rating[data-rating-value="4.0"] button:nth-child(-n+4) {
 		background: url("data:image/svg+xml;utf8,%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20width%3D%22512%22%20height%3D%22512%22%20viewBox%3D%220%200%20512%20512%22%3E%3Cpath%20fill%3D%22gold%22%20d%3D%22M457.888 210.672l-139.504-20.272-62.384-126.4-62.384 126.4-139.504 20.272 100.944 98.384-23.84 138.928 124.768-65.6 124.768 65.6-23.84-138.928c0 0 100.944-98.384 100.944-98.384z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E") center/cover no-repeat;
 	}
 
@@ -202,7 +200,7 @@
 		background: url("data:image/svg+xml;utf8,%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20width%3D%22512%22%20height%3D%22512%22%20viewBox%3D%220%200%20512%20512%22%3E%3Cpath%20fill%3D%22gold%22%20d%3D%22M321.616 190.496l-0.656-0.096-62.384-126.4-62.384 126.4-139.504 20.272 100.944 98.384-23.84 138.928 124.768-65.6 63.024 33.136z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E") center/cover no-repeat, url("data:image/svg+xml;utf8,%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20width%3D%22512%22%20height%3D%22512%22%20viewBox%3D%220%200%20512%20512%22%3E%3Cpath%20fill%3D%22%23ddd%22%20d%3D%22M457.888 210.672l-139.504-20.272-62.384-126.4-62.384 126.4-139.504 20.272 100.944 98.384-23.84 138.928 124.768-65.6 124.768 65.6-23.84-138.928c0 0 100.944-98.384 100.944-98.384z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E") center/cover no-repeat;
 	}
 
-	.c-rating[data-rating-value="5"] button:nth-child(-n+5) {
+	.c-rating[data-rating-value="5.0"] button:nth-child(-n+5) {
 		background: url("data:image/svg+xml;utf8,%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20width%3D%22512%22%20height%3D%22512%22%20viewBox%3D%220%200%20512%20512%22%3E%3Cpath%20fill%3D%22gold%22%20d%3D%22M457.888 210.672l-139.504-20.272-62.384-126.4-62.384 126.4-139.504 20.272 100.944 98.384-23.84 138.928 124.768-65.6 124.768 65.6-23.84-138.928c0 0 100.944-98.384 100.944-98.384z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E") center/cover no-repeat;
 	}
 
@@ -214,90 +212,61 @@
 		font-size: 150%;
 	}
 </style>
+<?php 
+// if($avaliacao == 0){}
+$avaliacao = number_format($avaliacao, 1, '.', '');
+if ($avaliacao > 0 and $avaliacao < 1) {
+	$avaliacao = 0.5;
+}
+// elseif ($avaliacao == 1) {}
 
-<div class=" containerPlayer">
-	<header>
-		<div class="playlist">
-			<i class="fa fa-bars"></i>
-		</div>
-		<div class="setting">
-			<i class="fa fa-cog"></i>
-		</div>
-	</header>
-	<main>
-		<div class="album-art">
-			<img src="https://upload.wikimedia.org/wikipedia/en/0/00/TheVines_WinningDays.jpg" alt="" />
-		</div>
-		<div class="player">
-			<i class="fa fa-repeat"></i>
-			<i class="fa fa-fast-backward"></i>
-			<i onclick="playBtn()" class="fa fa-play"></i>
-			<i class="fa fa-fast-forward"></i>
-			<i class="fa fa-random"></i>
-		</div>
-	</main>
-	<footer>
+elseif ($avaliacao > 1 and $avaliacao < 2) {
+	$avaliacao = 1.5;
+}
+elseif ($avaliacao > 2 and $avaliacao < 3) {
+	$avaliacao = 2.5;
+}
+elseif ($avaliacao > 3 and $avaliacao < 4) {
+	$avaliacao = 3.5;
+}
+elseif ($avaliacao > 4 and $avaliacao < 5) {
+	$avaliacao = 4.5;
+}
 
-		<div class="title"><?php echo $musica['nome'] ?>
-		</div>
-		<div class="artist"><?php echo $musica['artista'] ?></div>
+?>
 
-		<div class="time-tracker">
-			<div class="timer">
-				<div id="Slider" class="bg">
-				</div>
+<div class="row mt-3">
+	<div class="col-6 centered">
+		<div class="card">
+			<div class="card-body">
+				<h4 class="card-title">Informações da Música</h4>
+				<hr>
+				<p>Sua música já foi reproduzida <?php echo $musica['reproducoes'] ?> vezes.</p>
+				<hr>
+				<p>Sua música está presente em <?php echo $qtdPlaylists['qtd'] ?> playlists.</p>
+				<hr>
 			</div>
-			<div class="time"><?php echo $musica['duracao'] ?>:00</div>
 		</div>
-	</footer>
-
-
-</div>
-
-<div>
-	<div class="wrapperr">
-		<div class="rating-holder">
-			<div id="rating" class="c-rating c-rating--big" data-rating-value="0">
-				<button onclick="newRating(1)">1</button>
-				<button onclick="newRating(2)">2</button>
-				<button onclick="newRating(3)">3</button>
-				<button onclick="newRating(4)">4</button>
-				<button onclick="newRating(5)">5</button>
+	</div>
+	<div class="col-4">
+		<div class="card">
+			<div class="card-body">
+				<h4 class="card-title">Avaliação</h4>
+				<div>
+					<div class="wrapperr">
+						<div class="rating-holder">
+							<div id="rating" class="c-rating c-rating--big" data-rating-value="<?php echo $avaliacao ?>">
+								<button >1</button>
+								<button >2</button>
+								<button >3</button>
+								<button >4</button>
+								<button >5</button>
+							</div>
+						</div>
+					</div>
+					<h5 class="text-center"><?php echo $avaliacao ?></h5>
+				</div>
 			</div>
 		</div>
 	</div>
 </div>
-
-<script>
-	var timeout = false
-
-	function newRating(n) {
-		$.ajax({
-			type: "POST",
-			url: baseUrl + `/ajax/musica/newRating/<?php echo $musica['registro'] ?>/${n}`,
-			success: function(response) {
-				$("#rating").attr('data-rating-value', n)
-			}
-		});
-
-	}
-
-	function playBtn() {
-		if (timeout) {
-			window.alert("aguarde um pouco")
-			return
-		}
-		$.ajax({
-			type: "POST",
-			url: baseUrl + `/ajax/musica/newPlay/<?php echo $musica['registro'] ?>`,
-			success: function(response) {
-				timeout = true
-				window.alert('Play')
-				setTimeout(function() {
-					timeout = false
-				}, 5000);
-			}
-		});
-	}
-</script>
-<?php $this->endSection('content') ?>

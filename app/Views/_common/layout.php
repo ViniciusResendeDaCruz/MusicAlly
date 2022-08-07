@@ -7,6 +7,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 	<title>MusicAlly</title>
 	<!-- plugins:css -->
+	<!-- Jquery -->
+	<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+	<!-- Select2 -->
+	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js" defer></script>
+
+	<!-- DataTable -->
+	<link rel="stylesheet/less" type="text/css" href="<?php echo base_url('assets/css/styles.less') ?>	" />
+	<script src="https://cdn.jsdelivr.net/npm/less"></script>
 	<link rel="stylesheet" href="<?php echo base_url('assets/vendors/mdi/css/materialdesignicons.min.css') ?>" />
 	<link rel="stylesheet" href="<?php echo base_url('assets/vendors/css/vendor.bundle.base.css') ?>" />
 	<!-- endinject -->
@@ -23,12 +32,9 @@
 	<!-- End layout styles -->
 	<link rel="shortcut icon" href="<?php echo base_url('assets/images/MusicAlly-mini.png') ?>" />
 
-	<!-- Jquery -->
-	<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 
-	<!-- DataTable -->
-	<link rel="stylesheet/less" type="text/css" href="<?php echo base_url('assets/css/styles.less') ?>	" />
-	<script src="https://cdn.jsdelivr.net/npm/less"></script>
+	
+
 	<script src="https://kit.fontawesome.com/79404fc081.js" crossorigin="anonymous"></script>
 
 	<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -1099,7 +1105,7 @@
 						<li class="nav-item dropdown">
 							<a class="nav-link" id="profileDropdown" href="#" data-toggle="dropdown">
 								<div class="navbar-profile">
-									<img class="img-xs rounded-circle" src="<?php base_url('assets/images/faces/face15.jpg') ?>" alt="" />
+									<img class="img-xs rounded-circle" src="<?php echo base_url('assets/images/faces/face15.jpg') ?>" alt="" />
 									<p class="mb-0 d-none d-sm-block navbar-profile-name">
 										<?php echo $user['nome'] ?>
 									</p>
@@ -1194,6 +1200,7 @@
 										?>"> -->
 	<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.js"></script>
 	<!-- End custom js for this page -->
+	
 	<script>
 		var baseUrl = "<?php echo base_url() ?>"
 	</script>

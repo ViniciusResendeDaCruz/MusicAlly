@@ -24,4 +24,5 @@ class Playlist extends BaseController
 
         return view('Playlist/musicas',['user'=>$this->session->user, 'playlist'=>$this->playlistModel->getPlaylistById($id)]);
     }
+    
 }
