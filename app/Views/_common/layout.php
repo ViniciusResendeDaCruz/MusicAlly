@@ -874,7 +874,7 @@
 				</li>
 				<?php if ($user['tipo'] == 'P') : ?>
 					<li class="nav-item menu-items">
-						<a class="nav-link" href="<?php echo base_url('musica') ?>">
+						<a class="nav-link" href="<?php echo base_url('myMusica') ?>">
 							<span class="menu-icon">
 								<i class="mdi mdi-music-note"></i>
 							</span>
