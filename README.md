@@ -91,3 +91,44 @@ Additionally, make sure that the following extensions are enabled in your PHP:
 ## Running CodeIgniter Tests
 
 Information on running the CodeIgniter test suite can be found in the [README.md](tests/README.md) file in the tests directory.
+
+## How to install the project?
+> 1. ⏬ Install the XAMPP or WAPP to install dependencies of project (PHP and MySQL) <br>
+Sugestion (XAMPP - Windows): https://sourceforge.net/projects/xampp/files/XAMPP%20Windows/7.3.0/
+_Version 7.3 or subsequent._
+
+> 2. ⚙️ Clone this repository into the appropriate folder on the configured server. <br>
+Example: If you downloaded the suggestion above, the repository would be cloned to the path 'C:\xampp\htdocs'.
+
+> 3. 💡 Configure environment variables (if necessary). <br>
+Tutorial example (XAMPP - Windows 10): https://dinocjic.medium.com/add-xampp-php-to-environment-variables-in-windows-10-af20a765b0ce
+
+> 4. 💻 Open XAMPP and start of modules 'Apache' and 'MySQL'
+
+> 5. 📍 Open your terminal and execute the command >> `php spark`
+
+> 6. 🌐 Create your database using the backup `musically.sql` (backups > musically.sql) available with the main tables <br>
+Example: http://localhost/phpmyadmin/ > SQL > (Run the script `musically.sql`)
+
+> 7. 🔑 Configure your archive `Database.php` (app > Config > Database.php) in project with the created database <br>
+Example:<br>
+    'hostname' => 'localhost', <br>
+    'username' => 'root', <br>
+    'password' => '', <br>
+    'database' => 'insert_name_your_database_created'
+
+> 8. ✅ Open 'http://localhost:8080/' in your browser
+
+---
+
+[❓] Extra solutions
+
+If you have problems viewing development messages when running the project, try some of the steps below:
+
+> Create the `.env` folder in the main project folder, with the contents
+    >> `CI_ENVIRONMENT = development`
+
+> Configure `index.php` (Public > Index.php)
+    >> `define('ENVIRONMENT', 'development');`
+
+🚩 Remember to remove these suggested (Extra solutions) changes when creating a commit/pull request.
