@@ -1,8 +1,8 @@
 <body>
     <div class="container-scroller">
         <!-- partial:partials/_navbar.html -->
-			<?php include('navbar.php'); ?>
-            <!-- partial -->
+        <?php include('navbar.php'); ?>
+        <!-- partial -->
         <!-- partial:partials/_sidebar.html -->
         <?php include('sidebar.php'); ?>
         <!-- partial -->
